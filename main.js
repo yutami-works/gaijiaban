@@ -10,7 +10,7 @@ const page2 = './components/page2.vue';
 const router = new VueRouter({
   routes: [
     {
-      path: '/siteTop',
+      path: '/',
       component: httpVueLoader(siteTop)
     },
     {
