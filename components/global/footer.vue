@@ -4,7 +4,7 @@
       <div class="row">
         <button type="button" class="col-3 p-0 btn btn-success btn-lg" @click="jumpA">
           <i class="fas fa-solid fa-comments fa-2x"></i>
-          <p class="h6 text-nowrap">スレッド一覧</p>
+          <p class="h6 text-nowrap">Time Line</p>
         </button>
         <button type="button" class="col-3 p-0 btn btn-success btn-lg" @click="jumpB">
           <i class="fas fa-solid fa-address-card fa-2x"></i>
@@ -12,9 +12,9 @@
         </button>
         <button type="button" class="col-3 p-0 btn btn-success btn-lg" @click="jumpC">
           <i class="fas fa-solid fa-pen-to-square fa-2x"></i>
-          <p class="h6 text-nowrap">相談投稿</p>
+          <p class="h6 text-nowrap">とうこう</p>
         </button>
-        <button type="button" class="col-3 p-0 btn btn-success btn-lg" @click="jumpNotification">
+        <button type="button" class="col-3 p-0 btn btn-success btn-lg" @click="jumpD">
           <i class="fas fa-solid fa-bell fa-2x"></i>
           <p class="h6 text-nowrap">通知</p>
         </button>
@@ -36,11 +36,11 @@ module.exports = {
     },
     //相談一覧画面遷移メソッド
     jumpC() {
-      alert('ほげ')
+      this.$router.push('page3')
     },
     //相談一覧画面遷移メソッド
-    jumpNotification() {
-      alert('通知はありませんぜ')
+    jumpD() {
+      this.$router.push('page4')
     }
   }
 }

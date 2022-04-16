@@ -5,6 +5,8 @@ const siteTop = './components/siteTop.vue';
 
 const page1 = './components/page1.vue';
 const page2 = './components/page2.vue';
+const page3 = './components/page3.vue';
+const page4 = './components/page4.vue';
 
 //router-view
 const router = new VueRouter({
@@ -21,6 +23,14 @@ const router = new VueRouter({
       path: '/page2',
       component: httpVueLoader(page2)
     },
+    {
+      path: '/page3',
+      component: httpVueLoader(page3)
+    },
+    {
+      path: '/page4',
+      component: httpVueLoader(page4)
+    }
   ]
 });
 
